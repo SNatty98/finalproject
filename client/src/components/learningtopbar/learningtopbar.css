@@ -1,0 +1,44 @@
+.learnTopbar {
+  width: 100%;
+  height: 60px;
+  background-color: brown;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.learnTopLeft,
+.learnTopRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lTopCenter {
+  flex: 6;
+}
+
+.learnTopList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lTopListItem {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  color: white;
+  font-family: 'Bigshot One', cursive;
+}
+
+.Lbtn {
+  outline-color: none;
+  color: none;
+  border: none;
+  cursor: pointer;
+}

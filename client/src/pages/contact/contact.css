@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 232, 232);
+}
+
+.cFirstSection {
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+
+.cHeader {
+  font-family: "Varela", sans-serif;
+  font-size: 45px;
+}
+
+.cSecondSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 232, 232);
+  border-bottom: 1px black solid;
+}
+
+.titleInput {
+  width: 450px;
+  height: 100px;
+  outline: none;
+  margin-left: 50px;
+  border-radius: 15px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.emailInput {
+  margin-top: 50px;
+  width: 450px;
+  height: 80px;
+  border-radius: 15px;
+  margin-left: 50px;
+  outline: none;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.queryInput {
+  outline: none;
+  border-radius: 15px;
+  margin-left: 50px;
+  width: 500px;
+  height: 200px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.cBtn {
+    width: 60px;
+    margin-left: 250px;
+    margin-bottom: 40px;
+}

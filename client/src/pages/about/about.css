@@ -1,0 +1,65 @@
+.aboutPage {
+  display: inline-block;
+  background-color: rgb(235, 232, 232);
+}
+
+.firstSection {
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 10px;
+  width: 100;
+}
+
+.header {
+  font-family: "Varela", sans-serif;
+  font-size: 45px;
+}
+
+.smHeader {
+  font-family: "Varela", sans-serif;
+  color: rgb(93, 94, 95);
+  font-size: 19px;
+}
+
+.text {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.secondSection {
+  background-color: rgb(235, 232, 232);
+  height: 180px;
+  padding: 10px;
+  width: 100;
+  border-bottom: 1px black solid;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.thirdSection {
+  background-color: rgb(235, 232, 232);
+  height: 180px;
+  padding: 10px;
+  width: 100;
+  border-bottom: 1px black solid;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.fourthSection {
+  background-color: rgb(235, 232, 232);
+  height: 180px;
+  padding: 10px;
+  width: 100;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+
