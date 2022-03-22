@@ -18,8 +18,8 @@ import AdminHome from "./pages/adminhome/AdminHome";
 import StudentInfo from "./pages/studentinfo/StudentInfo"
 
 function App() {
-  const user = false;
-  const admin = false;
+  const user = true;
+  const admin = true;
   return (
     <Router>
       <Topbar />

@@ -1,8 +1,10 @@
-import React from 'react'
+import './adminhome.css'
 
 const AdminHome = () => {
   return (
-    <div>AdminHome</div>
+    <div className='adminHome'>
+      <div className='homeContainer'></div>
+    </div>
   )
 }
 

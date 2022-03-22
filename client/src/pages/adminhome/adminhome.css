@@ -1,0 +1,16 @@
+.adminHome {
+  height: 600px;
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.homeContainer {
+  display: flex;
+  width: 700px;
+  height: 320px;
+  border: 2px black solid;
+  border-radius: 15px;  
+}

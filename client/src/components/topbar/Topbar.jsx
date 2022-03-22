@@ -5,8 +5,8 @@ import Avatar from "./avatar.png";
 import React from "react";
 
 const Topbar = () => {
-  const user = false;
-  const admin = false;
+  const user = true;
+  const admin = true;
   return (
     <div className="top">
       {user && !admin ? (
@@ -80,6 +80,11 @@ const Topbar = () => {
               <li className="topListItem">
                 <Link className="link" to="/results">
                   STUDENTS
+                </Link>
+              </li>
+              <li className="topListItem">
+                <Link className="link" to="/contact">
+                  CONTACT
                 </Link>
               </li>
             </>
