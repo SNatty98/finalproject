@@ -16,10 +16,11 @@ import Probability from "./pages/probability/Probability";
 import SetTask from "./pages/settask/SetTask"
 import AdminHome from "./pages/adminhome/AdminHome";
 import StudentInfo from "./pages/studentinfo/StudentInfo"
+import MyTasks from "./pages/mytasks/MyTasks";
 
 function App() {
-  const user = true;
-  const admin = true;
+  const user = false;
+  const admin = false;
   return (
     <Router>
       <Topbar />
@@ -48,6 +49,7 @@ function App() {
         <Route path="/settasks" element={user && admin ? <SetTask /> : <Home />} />
         <Route path="/adminhome" element={user && admin ? <AdminHome /> : <Home />} />
         <Route path="results" element={user && admin ? <StudentInfo /> : <Home />} />
+        <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
       </Routes>
       <Footer />
     </Router>

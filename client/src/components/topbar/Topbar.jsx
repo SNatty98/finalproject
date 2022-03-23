@@ -5,8 +5,8 @@ import Avatar from "./avatar.png";
 import React from "react";
 
 const Topbar = () => {
-  const user = true;
-  const admin = true;
+  const user = false;
+  const admin = false;
   return (
     <div className="top">
       {user && !admin ? (
@@ -93,11 +93,23 @@ const Topbar = () => {
           )}
 
           {user && !admin ? (
+            <>
             <li className="topListItem">
-              <Link className="link" to="/learningcenter">
-                LEARNING CENTER
-              </Link>
-            </li>
+                <Link className="link" to="/about">
+                  ABOUT
+                </Link>
+              </li>
+              <li className="topListItem">
+                <Link className="link" to="/learningcenter">
+                  LEARNING CENTER
+                </Link>
+              </li>
+              <li className="topListItem">
+                <Link className="link" to="/mytasks">
+                  MY TASKS
+                </Link>
+              </li>
+            </>
           ) : (
             ""
           )}

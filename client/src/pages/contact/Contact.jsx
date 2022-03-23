@@ -1,7 +1,7 @@
 import "./contact.css";
 
 const Contact = () => {
-  const admin = true;
+  const admin = false;
   return (
     <div className="contact">
       <div className="cFirstSection">
