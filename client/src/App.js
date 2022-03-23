@@ -13,13 +13,15 @@ import Number from "./pages/number/Number";
 import Ratio from "./pages/ratio/Ratio";
 import Trigonometry from "./pages/trigonometry/Trigonometry";
 import Probability from "./pages/probability/Probability";
-import SetTask from "./pages/settask/SetTask"
+import SetTask from "./pages/settask/SetTask";
 import AdminHome from "./pages/adminhome/AdminHome";
-import StudentInfo from "./pages/studentinfo/StudentInfo"
+import StudentInfo from "./pages/studentinfo/StudentInfo";
 import MyTasks from "./pages/mytasks/MyTasks";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const user = false;
+  const { user }  = useContext(Context);
   const admin = false;
   return (
     <Router>
@@ -46,9 +48,18 @@ function App() {
           path="/probability"
           element={user ? <Probability /> : <Register />}
         />
-        <Route path="/settasks" element={user && admin ? <SetTask /> : <Home />} />
-        <Route path="/adminhome" element={user && admin ? <AdminHome /> : <Home />} />
-        <Route path="results" element={user && admin ? <StudentInfo /> : <Home />} />
+        <Route
+          path="/settasks"
+          element={user && admin ? <SetTask /> : <Home />}
+        />
+        <Route
+          path="/adminhome"
+          element={user && admin ? <AdminHome /> : <Home />}
+        />
+        <Route
+          path="results"
+          element={user && admin ? <StudentInfo /> : <Home />}
+        />
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
       </Routes>
       <Footer />

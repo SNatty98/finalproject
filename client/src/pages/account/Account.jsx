@@ -1,7 +1,12 @@
 import "./account.css";
-import avatar from "./avatar.png"
+import avatar from "./avatar.png";
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 
 const Account = () => {
+
+  const { user } = useContext(Context);
+
   return (
     <div className="settings">
       <div className="settingsWrapper">
@@ -13,16 +18,15 @@ const Account = () => {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img className="ppImg" src={avatar} alt="" />
-            <label htmlFor="fileInput">
+            <label htmlFor="fileInput"></label>
             <i class="settingsPPIcon fa-regular fa-pen-to-square"></i>
-            </label>
           </div>
-          <label >Username</label>
-          <input type="text" placeholder="Sean"/>
-          <label >Email</label>
-          <input type="email" placeholder="Sean@gmail.com"/>
-          <label >Password</label>
-          <input type="password"/>
+          <label>Username</label>
+          <input type="text" placeholder={user.username} />
+          <label>Email</label>
+          <input type="email" placeholder={user.email} />
+          <label>Password</label>
+          <input type="password" />
           <button className="settingsSubmit">Update Information</button>
         </form>
       </div>

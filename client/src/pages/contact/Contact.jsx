@@ -8,13 +8,11 @@ const Contact = () => {
         <h1 className="cHeader">Let Us Know What You Think!</h1>
       </div>
       <div className="cSecondSection">
-        {admin ? (
+        {admin && (
           <h2>
             As a teacher your advice is really important to the development of
             the website, be sure to give us any feedback!
           </h2>
-        ) : (
-          ""
         )}
         <input type="text" placeholder="Email Address" className="emailInput" />
         <input type="text" placeholder="Query Title" className="titleInput" />

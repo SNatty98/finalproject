@@ -2,11 +2,18 @@ import "./topbar.css";
 import { Link } from "react-router-dom";
 import LogoFreedom from "./LogoFreedom.svg";
 import Avatar from "./avatar.png";
-import React from "react";
+import { useContext } from "react";
+import { Context } from "../../context/Context";
 
 const Topbar = () => {
-  const user = false;
+  const { user, dispatch } = useContext(Context);
   const admin = false;
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+    window.location.replace("/login");
+  };
+
   return (
     <div className="top">
       {user && !admin ? (
@@ -94,7 +101,7 @@ const Topbar = () => {
 
           {user && !admin ? (
             <>
-            <li className="topListItem">
+              <li className="topListItem">
                 <Link className="link" to="/about">
                   ABOUT
                 </Link>
@@ -117,9 +124,22 @@ const Topbar = () => {
       </div>
       <div className="topRight">
         {user ? (
-          <Link className="link" to="/account">
-            <img className="topImg" src={Avatar} alt="" />
-          </Link>
+          <>
+            {user.profilePic ? (
+              <Link className="link" to="/account">
+                <img className="topImg" src={user.profilePic} alt="" />
+              </Link>
+            ) : (
+              <ul className="topListItem">
+                <Link className="link" to="/account">
+                  ACCOUNT
+                </Link>
+              </ul>
+            )}
+            <ul onClick={handleLogout} className="topListItem">
+              LOGOUT
+            </ul>
+          </>
         ) : (
           <ul className="topList">
             <li className="topListItem">
