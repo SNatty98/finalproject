@@ -1,14 +1,18 @@
 import HomeImage from "./HomeImage.png";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
+import { useContext } from "react";
 import "./home.css";
 
 const Home = () => {
+  const { user } = useContext(Context);
+
   return (
     <div className="home">
       <div className="info">
         <div className="separator">
-          <h1 className="header">Welcome to FreedomMaths!</h1>
+          <h1 className="header">Welcome to FreedomMaths! </h1>
           <p className="mainText">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
             officiis vero rem sunt velit tenetur, harum repellat aperiam, nulla

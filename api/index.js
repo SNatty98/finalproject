@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const usersRoute = require("./routes/users");
 const taskRoute = require("./routes/tasks");
-const adminUsersRoute = require("./routes/adminusers")
+
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -31,7 +31,6 @@ mongoose
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/tasks", taskRoute);
-app.use("/api/adminusers", adminUsersRoute);
 
 
 app.listen("5000", () => {

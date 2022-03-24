@@ -3,6 +3,7 @@ import Button from "../../components/button/Button";
 import { Context } from "../../context/Context";
 import { useContext, useRef } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const userRef = useRef();
@@ -19,7 +20,6 @@ export default function Login() {
       });
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       res.data && window.location.replace("/");
-
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
     }

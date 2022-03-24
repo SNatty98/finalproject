@@ -22,7 +22,6 @@ import { Context } from "./context/Context";
 
 function App() {
   const { user }  = useContext(Context);
-  const admin = false;
   return (
     <Router>
       <Topbar />
@@ -50,15 +49,15 @@ function App() {
         />
         <Route
           path="/settasks"
-          element={user && admin ? <SetTask /> : <Home />}
+          element={user && user.admin ? <SetTask /> : <Home />}
         />
         <Route
           path="/adminhome"
-          element={user && admin ? <AdminHome /> : <Home />}
+          element={user && user.admin ? <AdminHome /> : <Home />}
         />
         <Route
           path="results"
-          element={user && admin ? <StudentInfo /> : <Home />}
+          element={user && user.admin ? <StudentInfo /> : <Home />}
         />
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
       </Routes>

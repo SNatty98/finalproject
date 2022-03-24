@@ -2,7 +2,7 @@ const router = require("express").Router();
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
-//REGISTER
+//REGISTER USER
 router.post("/register", async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   const hashedPass = await bcrypt.hash(req.body.password, salt);
@@ -21,7 +21,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-//LOGIN
+//LOGIN USER
 router.post("/login", async (req, res) => {
   try {
     const user = await User.findOne({ username: req.body.username });
@@ -37,6 +37,25 @@ router.post("/login", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// REGISTER ADMIN
+// router.post("/registeradmin", async (req, res) => {
+//   const salt = await bcrypt.genSalt(10);
+//   const hashedPass = await bcrypt.hash(req.body.password, salt);
+
+//   try {
+//     const newAdmin = new AdminUser({
+//       username: req.body.username,
+//       email: req.body.email,
+//       password: hashedPass,
+//     });
+
+//     const admin = await newAdmin.save();
+//     res.status(200).json(admin);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;
 
