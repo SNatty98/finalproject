@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { Context } from "../../context/Context";
 
 const Account = () => {
-
   const { user } = useContext(Context);
 
   return (
@@ -18,8 +17,10 @@ const Account = () => {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img className="ppImg" src={avatar} alt="" />
-            <label htmlFor="fileInput"></label>
-            <i class="settingsPPIcon fa-regular fa-pen-to-square"></i>
+            <label htmlFor="fileInput">
+              <i class="settingsPPIcon fa-regular fa-pen-to-square" />
+            </label>
+            <input type="file" id="fileInput" style={{display:"none"}} />
           </div>
           <label>Username</label>
           <input type="text" placeholder={user.username} />
