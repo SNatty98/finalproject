@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { dispatch, isFetching } = useContext(Context);
+  const { user, dispatch, isFetching } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,11 @@ export default function Login() {
         password: passwordRef.current.value,
       });
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-      res.data && window.location.replace("/");
+      {
+        user
+          ? res.data && window.location.replace("/")
+          : res.data && window.location.replace("/adminhome");
+      }
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
     }

@@ -28,7 +28,52 @@
   border-radius: 20px;
 }
 
-.learnHeader {
+.numHeader {
   margin-left: 30px;
   margin-top: 30px;
+  padding-right: 100px;
+}
+
+.algHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-right: 100px;
+}
+
+.trigHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.ratHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-right: 135px;
+}
+
+.probHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-right: 50px;
+}
+
+.listed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.afterFirst {
+  margin-left: 40px;
+  margin-top: 15px;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.first {
+  margin-top: 15px;
+  font-size: 25px;
+  padding-bottom: 15px;
 }
