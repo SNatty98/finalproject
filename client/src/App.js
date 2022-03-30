@@ -8,11 +8,6 @@ import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import LearningCenter from "./pages/learningcenter/LearningCenter";
 import Account from "./pages/account/Account";
-import Algebra from "./learningCenterPages/algebra/Algebra";
-import Number from "./learningCenterPages/number/Number";
-import Ratio from "./learningCenterPages/ratio/Ratio";
-import Trigonometry from "./learningCenterPages/trigonometry/Trigonometry";
-import Probability from "./learningCenterPages/probability/Probability";
 import SetTask from "./pages/settask/SetTask";
 import AdminHome from "./pages/adminhome/AdminHome";
 import StudentInfo from "./pages/studentinfo/StudentInfo";
@@ -36,17 +31,6 @@ function App() {
           element={user ? <LearningCenter /> : <Register />}
         />
         <Route path="/account" element={user ? <Account /> : <Register />} />
-        <Route path="/algebra" element={user ? <Algebra /> : <Register />} />
-        <Route path="/number" element={user ? <Number /> : <Register />} />
-        <Route path="/ratio" element={user ? <Ratio /> : <Register />} />
-        <Route
-          path="/trigonometry"
-          element={user ? <Trigonometry /> : <Register />}
-        />
-        <Route
-          path="/probability"
-          element={user ? <Probability /> : <Register />}
-        />
         <Route
           path="/settasks"
           element={user && user.admin ? <SetTask /> : <Home />}
