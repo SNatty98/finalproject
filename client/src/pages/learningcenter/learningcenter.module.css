@@ -1,0 +1,209 @@
+.learnContainer {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 232, 232);
+}
+
+.numLearnSection {
+  display: flex;
+  width: 70%;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 20px;
+  height: 345px;
+  margin-bottom: 40px;
+}
+
+.algLearnSection {
+  display: flex;
+  width: 70%;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 20px;
+}
+
+.geomLearnSection {
+  display: flex;
+  width: 70%;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 20px;
+}
+
+.ratLearnSection {
+  display: flex;
+  width: 70%;
+  height: 220px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 20px;
+}
+
+.probLearnSection {
+  display: flex;
+  width: 70%;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-radius: 20px;
+}
+
+.lHeader {
+  font-family: "Varela", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  border: #000;
+}
+
+.numHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.algHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.geomHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.ratHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.firstProbHeader {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-right: 10px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.probHeader {
+  margin-left: 30px;
+  padding-right: 10px;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.listed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.afterFirst {
+  margin-left: 40px;
+  margin-top: 15px;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.probText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+}
+
+.ratText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+}
+
+.geomText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+}
+
+.algText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+}
+
+.numText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+}
+
+.ratText:hover {
+  color: white;
+}
+
+.probText:hover {
+  color: white;
+}
+
+.geomText:hover {
+  color: white;
+}
+
+.algText:hover {
+  color: white;
+}
+
+.numText:hover {
+  color: white;
+}
+
+.listArea {
+  margin-left: 20px;
+}

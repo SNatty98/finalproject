@@ -27,20 +27,23 @@ const Register = () => {
   return (
     <div className="container1">
       <form className="registerContainer" onSubmit={handleSubmit}>
-        <h1>Register</h1>
+        <h1 className="registerHeader">Register</h1>
         <input
           type="text"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          
         />
         <input
           type="text"
           placeholder="Username"
+          minLength={6}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
           placeholder="Password"
+          minLength={6}
           onChange={(e) => setPassword(e.target.value)}
         />
         <Button text="Register" type="submit" />
