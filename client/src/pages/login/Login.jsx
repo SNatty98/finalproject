@@ -32,7 +32,7 @@ export default function Login() {
   return (
     <div className="loginContainer1">
       <form className="loginContainer" onSubmit={handleSubmit}>
-        <h1>Login</h1>
+        <h1 className="loginHeader" >Login</h1>
         <input type="text" placeholder="Username" ref={userRef} />
         <input type="password" placeholder="Password" ref={passwordRef} />
         <Button className="loginBtn" text="Login" type="submit" />

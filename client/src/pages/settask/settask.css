@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.setTaskTitle {
+  font-family: "Varela", sans-serif;
+  text-align: center;
+
+}
+
 .backgroundColor {
   background-color: orange;
   padding-bottom: 150px;
