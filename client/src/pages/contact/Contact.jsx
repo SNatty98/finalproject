@@ -1,7 +1,7 @@
 import "./contact.css";
 
 const Contact = () => {
-  const admin = false;
+  const admin = true;
   return (
     <div className="contact">
       <div className="cFirstSection">
@@ -9,7 +9,7 @@ const Contact = () => {
       </div>
       <div className="cSecondSection">
         {admin && (
-          <h2>
+          <h2 className="adminText">
             As a teacher your advice is really important to the development of
             the website, be sure to give us any feedback!
           </h2>

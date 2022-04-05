@@ -14,6 +14,7 @@ import StudentInfo from "./pages/studentinfo/StudentInfo";
 import MyTasks from "./pages/mytasks/MyTasks";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import WholeNumber from "./pages/wholenumber/WholeNumber";
 
 function App() {
   const { user }  = useContext(Context);
@@ -44,6 +45,7 @@ function App() {
           element={user && user.admin ? <StudentInfo /> : <Home />}
         />
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
+        <Route path="/wholenumber" element={user ? <WholeNumber/> : <Home/>} />
       </Routes>
       <Footer />
     </Router>

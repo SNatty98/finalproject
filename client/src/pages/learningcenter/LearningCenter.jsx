@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import classes from "./learningcenter.module.css";
 import "./arrowStyling.css";
 
@@ -5,13 +7,15 @@ const LearningCenter = () => {
   return (
     <div>
       <div className={classes.learnContainer}>
-          <h3 className={classes.lHeader}>Topics</h3>
+        <h3 className={classes.lHeader}>Topics</h3>
         <div className={classes.numLearnSection}>
           <h1 className={classes.numHeader}>Number</h1>
           <i className="arrowIcon fa-solid fa-circle-arrow-right"></i>
           <ul className={classes.listed}>
             <div className={classes.listArea}>
-              <p className={classes.numText}>Whole Numbers</p>
+              <Link className="link" to="/wholenumber">
+                <p className={classes.numText}>Whole Numbers</p>
+              </Link>
               <p className={classes.numText}>Decimals</p>
               <p className={classes.numText}>Fractions</p>
               <p className={classes.numText}>Standard Form</p>

@@ -1,0 +1,163 @@
+.wholeNumberPage {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  border-radius: 20px;
+  height: 1200px;
+}
+
+.WNPspace {
+  width: 90%;
+  height: 300px;
+  background-color: #c6f9ed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.WNPtitle {
+  margin: 20px;
+  font-size: 45px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPinfo {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPinfo1 {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPlearning {
+  width: 90%;
+  height: 900px;
+  background-color: orange;
+}
+
+.WNPlearningHeader {
+  margin: 20px;
+  font-size: 25px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPplacevalue {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.placevalue {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+}
+
+.placevalue1 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 26px;
+  padding-right: 26px;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+}
+
+.placevalue2 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 68px;
+  padding-left: 69px;
+}
+
+.placevalue3 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 63px;
+  padding-left: 64px;
+}
+
+.placevalue4 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+
+.placevalue5 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 33px;
+  padding-left: 34px;
+}
+
+.placevalue6 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+
+.placevalue7 {
+  margin: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.WNPbtn {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

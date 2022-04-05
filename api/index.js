@@ -5,7 +5,8 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const usersRoute = require("./routes/users");
 const taskRoute = require("./routes/tasks");
-
+const multer = require("multer");
+const path = require("path");
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -14,11 +15,9 @@ app.use(function (req, res, next) {
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With,Content-Type,Accept,content-type,application"
-    
   );
   next();
 });
-
 
 dotenv.config();
 app.use(express.json());
@@ -32,6 +31,21 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/tasks", taskRoute);
 
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, '/images/')
+  },
+  filename: (req, file, cb) => {
+    cb(null, file.originalname)
+  },
+})
+
+
+const upload = multer({ storage: storage })
+
+app.post('/image', upload.single('file'), function (req, res) {
+  res.json({})
+})
 
 app.listen("5000", () => {
   console.log("Backend is running");
