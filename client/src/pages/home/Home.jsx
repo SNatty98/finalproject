@@ -1,12 +1,9 @@
 import HomeImage from "./HomeImage.png";
 import Button from "../../components/button/Button";
 import { Link } from "react-router-dom";
-import { Context } from "../../context/Context";
-import { useContext } from "react";
 import "./home.css";
 
 const Home = () => {
-  const { user } = useContext(Context);
 
   return (
     <div className="home">
@@ -27,7 +24,7 @@ const Home = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
             excepturi suscipit, sapiente voluptate voluptas nemo amet magnam
             inventore, debitis fuga modi corrupti consequuntur, voluptatem ea
-            maiores nostrum eveniet tempora ad.
+            maiores nostrum eveniet tempora ad. 
           </p>
           <div className="thisBtn">
             <Link className="link" to="/about">

@@ -55,6 +55,15 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //GET TASK
+router.get("/:id", async (req, res) => {
+  try {
+    const task = await Task.findById(req.params.id);
+    res.status(200).json(task);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

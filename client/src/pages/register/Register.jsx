@@ -46,6 +46,12 @@ const Register = () => {
           minLength={6}
           onChange={(e) => setPassword(e.target.value)}
         />
+         <input
+          type="password"
+          placeholder="Retype Password"
+          minLength={6}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <Button text="Register" type="submit" />
         {error && (
           <span style={{ marginTop: "10px" }}>Something went wrong!</span>

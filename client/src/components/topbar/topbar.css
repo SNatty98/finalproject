@@ -14,7 +14,7 @@
   flex: 3;
   display: flex;
   align-items: center;
-  justify-content:center
+  justify-content: center;
 }
 
 .topRight {
@@ -69,5 +69,5 @@
 
 .topImg {
   cursor: pointer;
+  margin-left: 120px;
 }
-
