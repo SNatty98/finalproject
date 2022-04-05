@@ -10,6 +10,18 @@
   height: 1200px;
 }
 
+.wholeNumberPage1 {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  border-radius: 20px;
+  height: 1200px;
+}
+
 .WNPspace {
   width: 90%;
   height: 300px;
@@ -37,6 +49,31 @@
   font-size: 20px;
   font-family: "Varela", sans-serif;
 }
+
+.WNPinfo2 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPcolumnNum {
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: "Varela", sans-serif;
+}
+
+.WNPcolumnNum1 {
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: "Varela", sans-serif;
+    border-bottom: 2px black solid;
+  }
 
 .WNPlearning {
   width: 90%;
@@ -151,13 +188,70 @@
 }
 
 .WNPbtn {
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    margin-left: 40px;
-    margin-top: 30px;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nextPage {
+  margin-top: 40px;
+  margin-left: 580px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.column {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.columnAddition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 550px;
+  height: 80px;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: rgb(216, 216, 216);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.columnAddition1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 550px;
+  height: 80px;
+  padding-bottom: 20px;
+  margin-left: 60px;
+  background-color: rgb(216, 216, 216);
+}
+
+.columnAddition2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  justify-content: center;
+  margin-left: 60px;
+  background-color: rgb(216, 216, 216);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
