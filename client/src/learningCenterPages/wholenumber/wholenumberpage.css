@@ -19,7 +19,7 @@
   margin-bottom: 20px;
   margin-left: 80px;
   border-radius: 20px;
-  height: 1200px;
+  height: 1600px;
 }
 
 .WNPspace {
@@ -67,17 +67,23 @@
 }
 
 .WNPcolumnNum1 {
-    margin-left: 20px;
-    margin-top: 50px;
-    margin-right: 10px;
-    font-size: 30px;
-    font-family: "Varela", sans-serif;
-    border-bottom: 2px black solid;
-  }
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: "Varela", sans-serif;
+  border-bottom: 2px black solid;
+}
 
 .WNPlearning {
   width: 90%;
-  height: 900px;
+  height: 750px;
+  background-color: orange;
+}
+
+.WNPlearning1 {
+  width: 90%;
+  height: 1300px;
   background-color: orange;
 }
 
@@ -199,9 +205,44 @@
   cursor: pointer;
 }
 
+.arrowForm {
+  display: flex;
+  flex-direction: row;
+}
+
 .nextPage {
   margin-top: 40px;
   margin-left: 580px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.nextPage1 {
+  margin-top: 40px;
+  margin-left: 480px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.prevPage {
+  margin-top: 40px;
+  margin-left: 50px;
   cursor: pointer;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -231,27 +272,81 @@
   background-color: rgb(216, 216, 216);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-
 }
 
-.columnAddition1 {
+.resizePos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 550px;
-  height: 80px;
-  padding-bottom: 20px;
-  margin-left: 60px;
-  background-color: rgb(216, 216, 216);
+  margin-top: 20px;
 }
 
-.columnAddition2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 550px;
-  justify-content: center;
-  margin-left: 60px;
-  background-color: rgb(216, 216, 216);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.resize {
+  width: 300px;
+  height: 280px;
+  border-radius: 5px;
+  position: static;
+  margin-left: 15px;
+}
+
+.leftBtn {
+  margin-top: 120px;
+  margin-left: 110px;
+  height: 50px;
+  width: 70px;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: orange;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.leftBtnOrange {
+  margin-top: 120px;
+  margin-left: 110px;
+  height: 50px;
+  width: 70px;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: orange;
+  border-radius: 8px;
+}
+
+.rightBtn {
+  margin-top: 120px;
+  margin-left: 20px;
+  height: 50px;
+  width: 70px;
+  border: none;
+  background-color: black;
+  color: orange;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.infoSection {
+  border-radius: 5px;
+  margin-left: 125px;
+  margin-top: 30px;
+  width: 450px;
+  height: 100px;
+  background-color: rgb(218, 251, 239);
+}
+
+.infoSection1 {
+  border-radius: 5px;
+  margin-left: 125px;
+  margin-top: 30px;
+  width: 450px;
+  height: 140px;
+  background-color: rgb(218, 251, 239);
+}
+
+.columnInfo {
+  margin-left: 20px;
+  margin-right: 5px;
+  padding-top: 10px;
+  font-family: "Varela", sans-serif;
+  font-size: 19px;
 }
