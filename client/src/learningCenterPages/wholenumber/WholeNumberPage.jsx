@@ -323,8 +323,20 @@ function WholeNumberPage() {
       )}
 
       {page === 2 && (
-        <div>
-          <h1>hello</h1>
+        <div className="wholeNumberPage1">
+          <div className="WNPspace">
+            <h1 className="WNPtitle">Whole Numbers</h1>
+            <p className="WNPinfo">
+              Numbers can be written in words. Both positive and negative
+              numbers can be added, subtracted, multiplied and divided using
+              rules. These rules must be applied in a specific order.
+            </p>
+          </div>
+          <div className="questionSection">
+            <input name="radiobtn" type="radio" ></input>
+            <input name="radiobtn" type="radio" ></input>
+            <input name="radiobtn" type="radio" ></input>
+          </div>
         </div>
       )}
     </>
