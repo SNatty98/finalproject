@@ -7,7 +7,7 @@
   margin-bottom: 20px;
   margin-left: 80px;
   border-radius: 20px;
-  height: 1100px;
+  height: 1260px;
 }
 
 .wholeNumberPage1 {
@@ -40,14 +40,14 @@
   margin-left: 20px;
   margin-top: 50px;
   font-size: 20px;
-  font-family: "Varela", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .WNPinfo1 {
   margin-left: 20px;
   margin-top: 10px;
   font-size: 20px;
-  font-family: "Varela", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .WNPinfo2 {
@@ -55,7 +55,7 @@
   margin-top: 10px;
   margin-right: 20px;
   font-size: 20px;
-  font-family: "Varela", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .WNPcolumnNum {
@@ -77,7 +77,7 @@
 
 .WNPlearning {
   width: 90%;
-  height: 750px;
+  height: 900px;
   background-color: orange;
 }
 

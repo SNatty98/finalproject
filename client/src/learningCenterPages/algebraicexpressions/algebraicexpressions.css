@@ -1,0 +1,67 @@
+.AEpage {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  height: 1100px;
+}
+
+.AEspace {
+  width: 90%;
+  height: 300px;
+  background-color: #c6f9ed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.AEtitle {
+  margin: 20px;
+  font-size: 45px;
+  font-family: "Varela", sans-serif;
+}
+
+.AEinfo {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.AEinfo1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.AEinfo2 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.AEinfo3 {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 35px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.AElearning {
+  width: 90%;
+  height: 750px;
+  background-color: orange;
+  margin-left: 20px;
+}
+
+.AElearningHeader {
+  margin: 20px;
+  font-size: 25px;
+  font-family: "Varela", sans-serif;
+}

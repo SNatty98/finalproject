@@ -15,6 +15,7 @@ import MyTasks from "./pages/mytasks/MyTasks";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import WholeNumber from "./pages/wholenumber/WholeNumber";
+import AlgebraicExpression from "./pages/algebraicexpression/AlgebraicExpression"
 
 function App() {
   const { user }  = useContext(Context);
@@ -46,6 +47,7 @@ function App() {
         />
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
         <Route path="/wholenumber" element={user ? <WholeNumber/> : <Home/>} />
+        <Route path="/expressions" element={<AlgebraicExpression/>} />
       </Routes>
       <Footer />
     </Router>
