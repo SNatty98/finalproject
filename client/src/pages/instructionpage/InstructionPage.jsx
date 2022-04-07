@@ -16,7 +16,7 @@ export default function InstructionPage() {
   return (
     <>
       <div className="infirstSection">
-        <h1 className="INheader">The Story So Far...</h1>
+        <h1 className="INheader">Daily Message Board!</h1>
       </div>
       <Instructions message={message} />
     </>
