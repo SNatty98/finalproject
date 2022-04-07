@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.INfirstSection {
+.infirstSection {
   background-color: purple;
   display: flex;
   align-items: center;
@@ -15,14 +15,14 @@
 }
 
 .INsecondSection {
-    background-color: rgb(235, 232, 232);
-    height: 100px;
-    padding: 10px;
-    border-bottom: 1px black solid;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 10px;
-  }
+  background-color: rgb(235, 232, 232);
+  height: 150px;
+  padding: 10px;
+  border-bottom: 1px black solid;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
 
 .INheader {
   font-family: "Varela", sans-serif;
@@ -40,6 +40,3 @@
   font-size: 15px;
   margin-top: 10px;
 }
-
-
-
