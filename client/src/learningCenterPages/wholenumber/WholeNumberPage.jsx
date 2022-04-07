@@ -153,7 +153,7 @@ function WholeNumberPage() {
             </div>
           </div>
         </>
-      )}
+      )}  
 
       {page === 1 && (
         <>

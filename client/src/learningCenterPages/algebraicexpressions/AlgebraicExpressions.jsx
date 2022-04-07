@@ -1,19 +1,76 @@
 import "./algebraicexpressions.css";
+import aSquared from "../images/a.png";
+import cSquared from "../images/c.png";
+import bSquared from "../images/bsqr.png";
+import SqrA from "../images/SqrA.png";
+import eSqr from "../images/eSqr.png";
 import { useState } from "react";
 
 function AlgebraicExpressions() {
   const [click, setClick] = useState(false);
+  const [click1, setClick1] = useState(false);
+  const [click2, setClick2] = useState(false);
+  const [click3, setClick3] = useState(false);
+  const [click4, setClick4] = useState(false);
   const [page, setPage] = useState(0);
 
   function handleClick() {
     setClick(true);
   }
 
-  function handleClick1() {
+  function removeClick() {
     setClick(false);
   }
 
+  function handleClick1() {
+    setClick1(true);
+  }
+
+  function removeClick1() {
+    setClick1(false);
+  }
+
+  function handleClick2() {
+    setClick2(true);
+  }
+
+  function removeClick2() {
+    setClick2(false);
+  }
+
+  function handleClick3() {
+    setClick3(true);
+  }
+
+  function removeClick3() {
+    setClick3(false);
+  }
+
+  function handleClick4() {
+    setClick4(true);
+  }
+
+  function removeClick4() {
+    setClick4(false);
+  }
+
   function nextPage() {
+    setPage(1);
+  }
+
+  function nextPage1() {
+    setPage(2);
+  }
+
+  function prevPage() {
+    setPage(0);
+  }
+
+  function nextPage2() {
+    setPage(3);
+  }
+
+  function prevPage1() {
     setPage(1);
   }
 
@@ -84,7 +141,7 @@ function AlgebraicExpressions() {
               </button>
             )}
             {click && (
-              <button className="AEbtn" onClick={handleClick1}>
+              <button className="AEbtn" onClick={removeClick}>
                 Hide Answer
               </button>
             )}
@@ -112,7 +169,7 @@ function AlgebraicExpressions() {
       )}
 
       {page === 1 && (
-        <div className="AEpage">
+        <div className="AEpage1">
           <div className="AEspace">
             <h1 className="AEtitle">Algebraic Expressions</h1>
             <p className="AEinfo">
@@ -124,7 +181,7 @@ function AlgebraicExpressions() {
               These variables often take the shape of letters!
             </p>
           </div>
-          <div className="AElearning">
+          <div className="AElearning1">
             <h2 className="AElearningHeader">Simplifying Expressions</h2>
             <p className="AEinfo2">Collecting like terms</p>
             <p className="AEinfo2">
@@ -165,6 +222,182 @@ function AlgebraicExpressions() {
             </p>
             <p className="AEinfo2">Therefore, our final answer is:</p>
             <p className="AEanswer2">5b - 2c.</p>
+            <h2 className="AElearningHeader">Question</h2>
+            <p className="AEinfo1">Simplify:</p>
+            <p className="AEinfo2">2x + x + 4c - 3c + 6d</p>
+            {!click1 && (
+              <button className="AEbtn" onClick={handleClick1}>
+                Show Answer
+              </button>
+            )}
+            {click1 && (
+              <button className="AEbtn" onClick={removeClick1}>
+                Hide Answer
+              </button>
+            )}
+            {click1 && (
+              <>
+                <p className="AEanswer1">
+                  In this expression we have 3 variables, so let's start by
+                  organising them.
+                </p>
+                <p className="AEanswer2">2x + x = 3x</p>
+                <p className="AEanswer2">4c - 3c = c</p>
+                <p className="AEanswer2">+ 6d</p>
+                <p className="AEanswer2">Final answer: 3x + c + 6d</p>
+              </>
+            )}
+
+            <h2 className="AElearningHeader">Question 2</h2>
+            <p className="AEinfo1">Simplify:</p>
+            <p className="AEinfo2">2x + x + 4c - 3c + 6d</p>
+            {!click2 && (
+              <button className="AEbtn" onClick={handleClick2}>
+                Show Answer
+              </button>
+            )}
+            {click2 && (
+              <button className="AEbtn" onClick={removeClick2}>
+                Hide Answer
+              </button>
+            )}
+            {click2 && (
+              <>
+                <p className="AEanswer1">
+                  In this expression we have 3 variables, so let's start by
+                  organising them.
+                </p>
+                <p className="AEanswer2">2x + x = 3x</p>
+                <p className="AEanswer2">4c - 3c = c</p>
+                <p className="AEanswer2">+ 6d</p>
+                <p className="AEanswer2">Final answer: 3x + c + 6d</p>
+              </>
+            )}
+            <div className="arrowForm">
+              <button className="prevPage" onClick={prevPage}>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button className="nextPage1" onClick={nextPage1}>
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {page === 2 && (
+        <div className="AEpage2">
+          <div className="AEspace">
+            <h2 className="AEtitle">Algebraic Expressions</h2>
+            <p className="AEinfo1">
+              Algebraic expressions are equations that use addition,
+              subtraction, multiplication and division; however the equations
+              are done with 'variables' alongside numbers.
+            </p>
+            <p className="AEinfo2">
+              These variables often take the shape of letters!
+            </p>
+          </div>
+          <div className="AElearning2">
+            <h2 className="AElearningHeader">Multiplication Expressions</h2>
+            <p className="AEinfo1">
+              Algebraic expressions can be added and subtracted, however they
+              can also be multiplied, so let's take a look at that!
+            </p>
+            <h3 className="AElearningHeader">First Example</h3>
+            <p className="AEinfo1">Simplify A x A</p>
+            <p className="AEinfo2">
+              When you multiply a number by itself, you square it, this is the
+              same in algebraic expressions.
+            </p>
+            <div className="squared">
+              <p className="AEanswer2">So, A x A =</p>
+              <img className="sqrImg" src={aSquared} alt="" />
+            </div>
+            <h3 className="AElearningHeader">Second Example</h3>
+            <p className="AEinfo1">Simplify C x C x C x C</p>
+            <p className="AEinfo2">
+              For this example, c is being multiplied by itself four times.
+            </p>
+            <p className="AEinfo2">
+              The logic follows from the previous example.
+            </p>
+            <div className="squared">
+              <p className="AEanswer2">C x C x C x C =</p>
+              <img className="sqrImg" src={cSquared} alt="" />
+            </div>
+            <h3 className="AElearningHeader">Question</h3>
+            <p className="AEinfo1">Simplify 2b x 7b</p>
+
+            {!click3 && (
+              <button className="AEbtn" onClick={handleClick3}>
+                Show Answer
+              </button>
+            )}
+            {click3 && (
+              <button className="AEbtn" onClick={removeClick3}>
+                Hide Answer
+              </button>
+            )}
+            {click3 && (
+              <>
+                <p className="AEanswer1">
+                  The first thing to do is take the numbers, and multiply them
+                  separately.
+                </p>
+                <p className="AEanswer1">This is 2 x 7 = 14.</p>
+                <div className="squared">
+                  <p className="AEanswer1">Then multiply the variables:</p>
+                  <img className="bSqr" src={bSquared} alt="" />
+                </div>
+                <div className="squared">
+                  <p className="AEanswer1">The final answer is</p>
+                  <img className="sqrImg1" src={SqrA} alt="" />
+                </div>
+              </>
+            )}
+
+            <h3 className="AElearningHeader">Question 2</h3>
+            <div className="div squared">
+              <p className="AEinfo1">Simplify</p>
+              <img className="eSqr" src={eSqr} alt="" />
+            </div>
+
+            {!click4 && (
+              <button className="AEbtn" onClick={handleClick4}>
+                Show Answer
+              </button>
+            )}
+            {click4 && (
+              <button className="AEbtn" onClick={removeClick4}>
+                Hide Answer
+              </button>
+            )}
+            {click4 && (
+              <>
+                <p className="AEanswer1">
+                  The first thing to do is take the numbers, and multiply them
+                  separately.
+                </p>
+                <p className="AEanswer1">This is 2 x 7 = 14.</p>
+                <div className="squared">
+                  <p className="AEanswer1">Then multiply the variables:</p>
+                  <img className="bSqr" src={bSquared} alt="" />
+                </div>
+                <div className="squared">
+                  <p className="AEanswer1">The final answer is</p>
+                  <img className="sqrImg1" src={SqrA} alt="" />
+                </div>
+              </>
+            )}
+            <div className="arrowForm">
+              <button className="prevPage" onClick={prevPage1}>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button className="nextPage1" onClick={nextPage2}>
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
       )}

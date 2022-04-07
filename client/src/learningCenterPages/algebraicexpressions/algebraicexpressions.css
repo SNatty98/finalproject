@@ -5,19 +5,53 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 80px;
-  height: 1600px;
+  height: 1400px;
+}
+
+.AEpage1 {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  height: 2200px;
+}
+
+.AEpage2 {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  height: 1825px;
 }
 
 .AElearning {
   width: 90%;
-  height: 1300px;
+  height: 1200px;
+  background-color: orange;
+  margin-left: 20px;
+}
+
+.AElearning1 {
+  width: 90%;
+  height: 2200px;
+  background-color: orange;
+  margin-left: 20px;
+}
+
+.AElearning2 {
+  width: 90%;
+  height: 1525px;
   background-color: orange;
   margin-left: 20px;
 }
 
 .AEspace {
   width: 90%;
-  height: 300px;
+  height: 325px;
   background-color: #c6f9ed;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -97,4 +131,35 @@
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.squared {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sqrImg {
+  width: 35px;
+  height: 35px;
+  margin-top: 7px;
+}
+
+.sqrImg1 {
+  width: 40px;
+  height: 40px;
+  margin-top: 13px;
+  margin-left: 7px;
+}
+
+.bSqr {
+  height: 60px;
+  width: 90px;
+  margin-top: 2px;
+}
+
+.eSqr {
+    height: 60px;
+    width: 90px;
+    margin-top: 11px;
+    margin-left: 3px;
 }
