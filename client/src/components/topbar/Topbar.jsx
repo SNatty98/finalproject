@@ -174,6 +174,11 @@ const Topbar = () => {
                  MY TASKS
                </Link>
              </li>
+             <li className="topListItem">
+               <Link className="link" to="/instructions">
+                 INSTRUCTIONS
+               </Link>
+             </li>
            </>
            ) : (
              ""

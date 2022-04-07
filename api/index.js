@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const usersRoute = require("./routes/users");
 const taskRoute = require("./routes/tasks");
+const messageRoute = require("./routes/message");
 const multer = require("multer");
 const path = require("path");
 
@@ -30,6 +31,7 @@ mongoose
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/tasks", taskRoute);
+app.use("/api/messages", messageRoute);
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

@@ -12,54 +12,72 @@ function AlgebraicExpressions() {
   const [click2, setClick2] = useState(false);
   const [click3, setClick3] = useState(false);
   const [click4, setClick4] = useState(false);
+
+  const [style, setStyle] = useState("AEpage");
+  const [style1, setStyle1] = useState("AEpage1");
+  const [style2, setStyle2] = useState("AEpage2");
+
   const [page, setPage] = useState(0);
 
   function handleClick() {
     setClick(true);
+    setStyle("AEpages");
   }
 
   function removeClick() {
     setClick(false);
+    setStyle("AEpage");
   }
 
   function handleClick1() {
     setClick1(true);
+    setStyle1("AEpages1")
   }
 
   function removeClick1() {
     setClick1(false);
+    setStyle1("AEpage1")
   }
 
   function handleClick2() {
     setClick2(true);
+    setStyle1("AEpagess1")
   }
 
   function removeClick2() {
     setClick2(false);
+    setStyle1("AEpages1")
   }
 
   function handleClick3() {
     setClick3(true);
+    setStyle2("AEpages2")
   }
 
   function removeClick3() {
     setClick3(false);
+    setStyle2("AEpage2")
   }
 
   function handleClick4() {
     setClick4(true);
+    setStyle2("AEpagess2")
   }
 
   function removeClick4() {
     setClick4(false);
+    setStyle2("AEpages2")
   }
 
   function nextPage() {
     setPage(1);
+    window.scrollTo(0, 0);
+
   }
 
   function nextPage1() {
     setPage(2);
+    window.scrollTo(0, 0);
   }
 
   function prevPage() {
@@ -68,6 +86,7 @@ function AlgebraicExpressions() {
 
   function nextPage2() {
     setPage(3);
+    window.scrollTo(0, 0);
   }
 
   function prevPage1() {
@@ -77,7 +96,7 @@ function AlgebraicExpressions() {
   return (
     <>
       {page === 0 && (
-        <div className="AEpage">
+        <div className={style}>
           <div className="AEspace">
             <h1 className="AEtitle">Algebraic Expressions</h1>
             <p className="AEinfo">
@@ -169,7 +188,7 @@ function AlgebraicExpressions() {
       )}
 
       {page === 1 && (
-        <div className="AEpage1">
+        <div className={style1}>
           <div className="AEspace">
             <h1 className="AEtitle">Algebraic Expressions</h1>
             <p className="AEinfo">
@@ -286,7 +305,7 @@ function AlgebraicExpressions() {
       )}
 
       {page === 2 && (
-        <div className="AEpage2">
+        <div className={style2}>
           <div className="AEspace">
             <h2 className="AEtitle">Algebraic Expressions</h2>
             <p className="AEinfo1">

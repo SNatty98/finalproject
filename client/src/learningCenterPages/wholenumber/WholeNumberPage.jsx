@@ -10,20 +10,27 @@ import imgThird from "../images/971++.png";
 
 function WholeNumberPage() {
   const [click, setClick] = useState(false);
+
   const [page, setPage] = useState(0);
+
   const [section, setSection] = useState(0);
   const [section1, setSection1] = useState(0);
 
+  const [style, setStyle] = useState("wholeNumberPage");
+
   function handleShow() {
     setClick(true);
+    setStyle("wholeNumberPages1");
   }
 
   function handleHide() {
     setClick(false);
+    setStyle("wholeNumberPage");
   }
 
   function nextPage() {
     setPage(1);
+    window.scrollTo(0, 0);
   }
 
   function nextPage1() {
@@ -70,7 +77,7 @@ function WholeNumberPage() {
     <>
       {page === 0 && (
         <>
-          <div className="wholeNumberPage">
+          <div className={style}>
             <div className="WNPspace">
               <h1 className="WNPtitle">Whole Numbers</h1>
               <p className="WNPinfo">
@@ -153,7 +160,7 @@ function WholeNumberPage() {
             </div>
           </div>
         </>
-      )}  
+      )}
 
       {page === 1 && (
         <>
@@ -322,7 +329,7 @@ function WholeNumberPage() {
         </>
       )}
 
-      {page === 2 && (
+      {/* {page === 2 && (
         <div className="wholeNumberPage1">
           <div className="WNPspace">
             <h1 className="WNPtitle">Whole Numbers</h1>
@@ -333,12 +340,12 @@ function WholeNumberPage() {
             </p>
           </div>
           <div className="questionSection">
-            <input name="radiobtn" type="radio" ></input>
-            <input name="radiobtn" type="radio" ></input>
-            <input name="radiobtn" type="radio" ></input>
+            <input name="radiobtn" type="radio"></input>
+            <input name="radiobtn" type="radio"></input>
+            <input name="radiobtn" type="radio"></input>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

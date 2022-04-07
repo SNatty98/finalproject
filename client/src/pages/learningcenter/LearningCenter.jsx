@@ -30,7 +30,9 @@ const LearningCenter = () => {
           <i className="arrowIcon fa-solid fa-circle-arrow-right"></i>
           <ul className={classes.listed}>
             <div className={classes.listArea}>
+              <Link className="link" to="/expressions">
               <p className={classes.algText}>Algebraic Expressions</p>
+              </Link>
               <p className={classes.algText}>Algebraic Formulae</p>
               <p className={classes.algText}>Solving Linear Equations</p>
               <p className={classes.algText}>Solving Simultaneous Equations</p>
