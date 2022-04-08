@@ -15,11 +15,12 @@ import MyTasks from "./pages/mytasks/MyTasks";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import WholeNumber from "./pages/wholenumber/WholeNumber";
-import AlgebraicExpression from "./pages/algebraicexpression/AlgebraicExpression"
+import AlgebraicExpression from "./pages/algebraicexpression/AlgebraicExpression";
 import InstructionPage from "./pages/instructionpage/InstructionPage";
+import SendMessage from "./pages/sendMessage/SendMessage";
 
 function App() {
-  const { user }  = useContext(Context);
+  const { user } = useContext(Context);
   return (
     <Router>
       <Topbar />
@@ -43,14 +44,26 @@ function App() {
           element={user && user.admin ? <AdminHome /> : <Home />}
         />
         <Route
-          path="results"
+          path="/results"
           element={user && user.admin ? <StudentInfo /> : <Home />}
         />
+        <Route
+          path="/sendmessage"
+          element={user && user.admin ? <SendMessage /> : <Home />}
+        />
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
-        <Route path="/wholenumber" element={user ? <WholeNumber/> : <Home/>} />
-        <Route path="/expressions" element={user ? <AlgebraicExpression/> : <Home/>} />
-        <Route path="/instructions" element={user ? <InstructionPage/> : <Home/>} />
-
+        <Route
+          path="/wholenumber"
+          element={user ? <WholeNumber /> : <Home />}
+        />
+        <Route
+          path="/expressions"
+          element={user ? <AlgebraicExpression /> : <Home />}
+        />
+        <Route
+          path="/instructions"
+          element={user ? <InstructionPage /> : <Home />}
+        />
       </Routes>
       <Footer />
     </Router>

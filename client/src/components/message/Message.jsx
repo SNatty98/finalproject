@@ -8,7 +8,7 @@ export default function Message({ message }) {
         <p className="INtext">{message.info}</p>
         <p className="INtext">From: {message.username}</p>
         <p className="INtext">
-          Set For: {message.setFor}
+          Set For: {message.date}
         </p>
       </div>
     </div>

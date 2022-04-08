@@ -1,0 +1,91 @@
+.write {
+  padding-top: 50px;
+  border-top: 1px solid #000;
+}
+
+.writeForm {
+  position: relative;
+}
+
+.writeFormGroup {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.writeIcon {
+  font-size: 45px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  margin-top: 30px;
+}
+
+.writeInput1 {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 500px;
+  margin-top: 30px;
+}
+
+.setFor {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.writeText {
+  font-size: 20px;
+  height: 200px;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.errorText {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.errorText1 {
+  position: absolute;
+  top: 105px;
+  right: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.writeImg {
+  margin-left: 150px;
+  width: 925px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}

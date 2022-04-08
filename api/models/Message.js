@@ -18,7 +18,7 @@ const MessageSchema = new mongoose.Schema(
       required: true,
     },
 
-    setFor: {
+    date: {
       type: String,
       required: false
     }

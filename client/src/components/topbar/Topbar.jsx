@@ -1,13 +1,15 @@
 import "./topbar.css";
 import { Link } from "react-router-dom";
 import LogoFreedom from "./LogoFreedom.svg";
-import Avatar from "./avatar.png";
 import { useContext } from "react";
 import { Context } from "../../context/Context";
 
-const Topbar = () => {
+export default function Topbar() {
   const { user, dispatch } = useContext(Context);
-  const admin = false;
+
+  function topPage() {
+    window.scrollTo(0, 0);
+  }
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
@@ -15,50 +17,11 @@ const Topbar = () => {
   };
 
   return (
-    // <div>
-    //   <ul className="topList">
-    //     //{" "}
-    //     <li className="topListItem">
-    //       //{" "}
-    //       <Link className="link" to="/login">
-    //         // LOGIN //{" "}
-    //       </Link>
-    //       //{" "}
-    //     </li>
-    //     //{" "}
-    //     <li className="topListItem">
-    //       //{" "}
-    //       <Link className="link" to="/register">
-    //         // REGISTER //{" "}
-    //       </Link>
-    //       //{" "}
-    //     </li>
-    //     //{" "}
-    //     <ul onClick={handleLogout} className="topListItem">
-    // //           LOGOUT
-    // //         </ul>
-    //   </ul>
-
-    //   {user ? (
-    //     <>
-    //       {user.admin ? (
-    //         <div>
-    //           <h1>adminsdfsd</h1>
-    //         </div>
-    //       ) : (
-    //         "ppppp"
-    //       )}
-    //     </>
-    //   ) : (
-    //     ""
-    //   )}
-    // </div>
-
     <div className="top">
       {user ? (
         <>
           {!user.admin ? (
-            <div className="topLeft">
+            <div className="topLeft" onClick={topPage}>
               <Link className="link" to="/">
                 <img className="logoImg" src={LogoFreedom} alt="" />
               </Link>
@@ -72,7 +35,7 @@ const Topbar = () => {
       )}
 
       {!user ? (
-        <div className="topLeft">
+        <div className="topLeft" onClick={topPage}>
           <Link className="link" to="/">
             <img className="logoImg" src={LogoFreedom} alt="" />
           </Link>
@@ -84,7 +47,7 @@ const Topbar = () => {
       {user ? (
         <>
           {user.admin ? (
-            <div className="topLeft">
+            <div className="topLeft" onClick={topPage}>
               <Link className="link" to="/adminhome">
                 <img className="logoImg" src={LogoFreedom} alt="" />
               </Link>
@@ -101,17 +64,17 @@ const Topbar = () => {
         <ul className="topList">
           {!user ? (
             <>
-              <li className="topListItem">
+              <li className="topListItem" onClick={topPage}>
                 <Link className="link" to="/">
                   HOME
                 </Link>
               </li>
-              <li className="topListItem">
+              <li className="topListItem" onClick={topPage}>
                 <Link className="link" to="/about">
                   ABOUT
                 </Link>
               </li>
-              <li className="topListItem">
+              <li className="topListItem" onClick={topPage}>
                 <Link className="link" to="/contact">
                   CONTACT
                 </Link>
@@ -125,25 +88,25 @@ const Topbar = () => {
             <>
               {user.admin ? (
                 <>
-                  <li className="topListItem">
+                  <li className="topListItem" onClick={topPage}>
                     <Link className="link" to="/adminhome">
                       HOME
                     </Link>
                   </li>
 
-                  <li className="topListItem">
+                  <li className="topListItem" onClick={topPage}>
                     <Link className="link" to="/settasks">
                       SET TASKS
                     </Link>
                   </li>
-                  <li className="topListItem">
+                  <li className="topListItem" onClick={topPage}>
                     <Link className="link" to="/results">
                       STUDENTS
                     </Link>
                   </li>
-                  <li className="topListItem">
-                    <Link className="link" to="/contact">
-                      CONTACT
+                  <li className="topListItem" onClick={topPage}>
+                    <Link className="link" to="/sendmessage">
+                      SEND MESSAGE
                     </Link>
                   </li>
                 </>
@@ -156,40 +119,39 @@ const Topbar = () => {
           )}
 
           {user ? (
-         <>
-           {!user.admin ? (
-             <>
-             <li className="topListItem">
-               <Link className="link" to="/about">
-                 ABOUT
-               </Link>
-             </li>
-             <li className="topListItem">
-               <Link className="link" to="/learningcenter">
-                 LEARNING CENTER
-               </Link>
-             </li>
-             <li className="topListItem">
-               <Link className="link" to="/mytasks">
-                 MY TASKS
-               </Link>
-             </li>
-             <li className="topListItem">
-               <Link className="link" to="/instructions">
-                 INSTRUCTIONS
-               </Link>
-             </li>
-           </>
-           ) : (
-             ""
-           )}
-         </>
-       ) : (
-         ""
-       )}
+            <>
+              {!user.admin ? (
+                <>
+                  <li className="topListItem" onClick={topPage}>
+                    <Link className="link" to="/about">
+                      ABOUT
+                    </Link>
+                  </li>
+                  <li className="topListItem" onClick={topPage}>
+                    <Link className="link" to="/learningcenter">
+                      LEARNING CENTER
+                    </Link>
+                  </li>
+                  <li className="topListItem" onClick={topPage}>
+                    <Link className="link" to="/mytasks">
+                      MY TASKS
+                    </Link>
+                  </li>
+                  <li className="topListItem">
+                    <Link className="link" to="/instructions">
+                      INSTRUCTIONS
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                ""
+              )}
+            </>
+          ) : (
+            ""
+          )}
         </ul>
       </div>
-
 
       <div className="topRight">
         {user ? (
@@ -199,7 +161,7 @@ const Topbar = () => {
                 <img className="topImg" src={user.profilePic} alt="" />
               </Link>
             ) : (
-              <ul className="topListItem">
+              <ul className="topListItem" onClick={topPage}>
                 <Link className="link" to="/account">
                   ACCOUNT
                 </Link>
@@ -211,12 +173,12 @@ const Topbar = () => {
           </>
         ) : (
           <ul className="topList">
-            <li className="topListItem">
+            <li className="topListItem" onClick={topPage}>
               <Link className="link" to="/login">
                 LOGIN
               </Link>
             </li>
-            <li className="topListItem">
+            <li className="topListItem" onClick={topPage}>
               <Link className="link" to="/register">
                 REGISTER
               </Link>
@@ -226,6 +188,4 @@ const Topbar = () => {
       </div>
     </div>
   );
-};
-
-export default Topbar;
+}
