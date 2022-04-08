@@ -28,16 +28,12 @@ router.put("/:id", async (req, res) => {
 
 //DELETE
 router.delete("/:id", async (req, res) => {
-  if (req.body.userId === req.params.id) {
     try {
       await User.findByIdAndDelete(req.params.id);
       res.status(200).json("User Deleted");
     } catch (err) {
       res.status(500).json(err);
     }
-  } else {
-    res.status(401).json("You can only delete your account");
-  }
 });
 
 module.exports = router;

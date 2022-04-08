@@ -21,7 +21,6 @@ export default function Message({ message }) {
     try {
       await axios.delete(`http://localhost:5000/api/messages/${message._id}`);
       setBackdrop(false);
-      window.location.reload();
     } catch (err) {
       setError(true);
     }
