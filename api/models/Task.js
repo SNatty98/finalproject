@@ -23,7 +23,7 @@ const TaskSchema = new mongoose.Schema(
 
     taskImage: {
       type: String,
-      default: ""
+      default: "",
     },
   },
   { timestamps: true }

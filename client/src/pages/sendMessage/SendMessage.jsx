@@ -22,10 +22,7 @@ export default function SendMessage() {
       date,
     };
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/messages",
-        newMessage
-      );
+      await axios.post("http://localhost:5000/api/messages", newMessage);
       window.location.replace("/adminhome");
     } catch (err) {
       setError(true);
@@ -42,15 +39,14 @@ export default function SendMessage() {
             placeholder="Task Title"
             className="writeInput1"
             autoFocus={true}
-            onChange={e=>setTitle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
           />
           <input
             type="text"
             placeholder="Set a date"
             className="setFor"
             autoFocus={true}
-            onChange={e=>setDate(e.target.value)}
-
+            onChange={(e) => setDate(e.target.value)}
           />
         </div>
         <div className="writeFormGroup">
@@ -58,8 +54,7 @@ export default function SendMessage() {
             placeholder="Write your task description here!"
             type="text"
             className="writeInput writeText"
-            onChange={e=>setInfo(e.target.value)}
-
+            onChange={(e) => setInfo(e.target.value)}
           ></textarea>
         </div>
         <button className="writeSubmit" type="submit">

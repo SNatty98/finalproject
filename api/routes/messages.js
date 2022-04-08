@@ -16,15 +16,13 @@ router.post("/", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const message = await Message.findById(req.params.id);
-    if (message.username === req.body.username) {
+     {
       try {
         await message.delete();
         res.status(200).json("Message deleted!");
       } catch (err) {
         res.status(500).json(err);
       }
-    } else {
-      res.status(401).json("You can only delete your messages");
     }
   } catch (err) {
     res.status(500).json(err);

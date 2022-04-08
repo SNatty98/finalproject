@@ -138,8 +138,8 @@ export default function Topbar() {
                     </Link>
                   </li>
                   <li className="topListItem">
-                    <Link className="link" to="/instructions">
-                      INSTRUCTIONS
+                    <Link className="link" to="/messageboard">
+                      MESSAGE BOARD
                     </Link>
                   </li>
                 </>

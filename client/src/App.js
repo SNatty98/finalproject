@@ -61,7 +61,7 @@ function App() {
           element={user ? <AlgebraicExpression /> : <Home />}
         />
         <Route
-          path="/instructions"
+          path="/messageboard"
           element={user ? <InstructionPage /> : <Home />}
         />
       </Routes>

@@ -16,7 +16,7 @@
 
 .INsecondSection {
   background-color: rgb(235, 232, 232);
-  height: 150px;
+  height: 160px;
   padding: 10px;
   border-bottom: 1px black solid;
   margin-left: 40px;
@@ -39,4 +39,24 @@
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
   margin-top: 10px;
+}
+
+.delBtn {
+  float: right;
+  cursor: pointer;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 3px;
+  color: #fff;
+  background: #000;
+  line-height: 28px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.delBtn:hover {
+  background-color: purple;
 }
