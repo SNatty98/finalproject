@@ -32,3 +32,8 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+.Err {
+  font-family: "Varela", sans-serif;
+  margin-top: 10px;
+}

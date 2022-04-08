@@ -6,19 +6,28 @@ import axios from "axios";
 const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
+  const [passError, setPassError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/register", {
-        email,
-        username,
-        password,
-      });
-      res.data && window.location.replace("/login");
+      if (password === confirmPassword) {
+        const res = await axios.post(
+          "http://localhost:5000/api/auth/register",
+          {
+            email,
+            username,
+            password,
+          }
+        );
+        res.data && window.location.replace("/login");
+      } else {
+        setPassError(true);
+      }
     } catch (err) {
       setError(true);
     }
@@ -32,29 +41,33 @@ const Register = () => {
           type="text"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
-          
+          required={true}
         />
         <input
           type="text"
           placeholder="Username"
           minLength={6}
           onChange={(e) => setUsername(e.target.value)}
+          required={true}
         />
         <input
           type="password"
           placeholder="Password"
           minLength={6}
           onChange={(e) => setPassword(e.target.value)}
+          required={true}
         />
-         <input
+        <input
           type="password"
-          placeholder="Retype Password"
+          placeholder="Confirm Password"
           minLength={6}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+          required={true}
         />
         <Button text="Register" type="submit" />
-        {error && (
-          <span style={{ marginTop: "10px" }}>Something went wrong!</span>
+        {error && <span className="Err">Something went wrong!</span>}
+        {passError && (
+          <span className="Err">Your passwords did not match!</span>
         )}
       </form>
     </div>

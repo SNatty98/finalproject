@@ -34,7 +34,7 @@ export default function Login() {
       <form className="loginContainer" onSubmit={handleSubmit}>
         <h1 className="loginHeader" >Login</h1>
         <input type="text" placeholder="Username" ref={userRef} />
-        <input type="password" placeholder="Password" ref={passwordRef} />
+        <input type="password" minLength={6} placeholder="Password" ref={passwordRef} />
         <Button className="loginBtn" text="Login" type="submit" />
       </form>
     </div>
