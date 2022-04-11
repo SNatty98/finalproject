@@ -1,216 +1,169 @@
 .taskPage {
-    flex: 9;
-    width: 100;
-    height: 2000px;
-  }
-  
-  .taskPage1 {
-    flex: 9;
-    width: 100;
-    height: 550px;
-  }
-  
-  .headerSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    height: 100px;
-    width: 80%;
-    border-bottom: 2px solid #000;
-    margin-left: 70px;
-  }
-  
-  .taskHeader {
-    font-family: "Varela", sans-serif;
-    font-size: 45px;
-  }
-  
-  .taskCard {
-    margin-left: 50px;
-    margin-top: 40px;
-    width: 700px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: rgb(235, 232, 232);
-  }
-  
-  .ratCard {
-    margin-top: 40px;
-    margin-left: 75px;
-    margin-bottom: 90px;
-    width: 650px;
-    height: 225px;
-    border-radius: 5px;
-    background-color: rgb(235, 232, 232);
-  }
-  
-  .algCard1 {
-    margin-top: 20px;
-    width: 650px;
-    height: 200px;
-    border-radius: 5px;
-    background-color: rgb(235, 232, 232);
-  }
-  
-  .algCard2 {
-    margin-top: 13px;
-    width: 650px;
-    height: 200px;
-    border-radius: 5px;
-    background-color: rgb(235, 232, 232);
-  }
-  
-  .showTaskBtn {
-    margin-top: 25px;
-    margin-left: 600px;
-    position: absolute;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #1e293b;
-    color: white;
-  }
-  
-  .showTaskBtn:hover {
-    background-color: rgb(22, 134, 22);
-    color: #fff;
-  }
-  
-  .taskTitle {
-    margin-left: 15px;
-    font-size: 24px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .taskTitle1 {
-    margin-left: 10px;
-    font-family: "Varela Round", sans-serif;
-    font-size: 34px;
-  }
-  
-  .qNum {
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .questions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 25px;
-  }
-  
-  .radioBtn {
-    height: 15px;
-    width: 15px;
-  }
-  
-  .qText {
-    margin-left: 20px;
-    margin-bottom: 12px;
-    font-size: 16px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .qTop {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .question {
-    margin-left: 60px;
-    margin-bottom: 15px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .question1 {
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  .question5 {
-    position: absolute;
-    left: 274px;
-    top: 1092px;
-    font-family: "Varela Round", sans-serif;
-  }
-  
-  
-  .questionT {
-    margin-left: 20px;
-    margin-top: 9px;
-    margin-bottom: 15px;
-    font-family: "Varela Round", sans-serif;
-    font-size: 20px;
-    color: rgb(10, 117, 10);
-  }
-  
-  .questionF {
-    margin-left: 20px;
-    margin-top: 9px;
-    margin-bottom: 15px;
-    font-family: "Varela Round", sans-serif;
-    font-size: 20px;
-    color: red;
-  }
-  
-  .answerPos {
-    position: absolute;
-    margin-left: 500px;
-    margin-top: 70px;
-  }
-  
-  .wrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .firstImg {
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
-    margin-bottom: 1px;
-  }
-  
-  .secondImg {
-    position: absolute;
-    height: 45px;
-    width: 35px;
-    left: 163px;
-    top: 950px
-  }
-  
-  .thirdImg {
-    position: absolute;
-    height: 45px;
-    width: 35px;
-    left: 163px;
-    top: 992px;
-  }
-  
-  .fourthImg {
-    width: 60px;
-    margin-left: 5px;
-    margin-bottom: 7px;
-  }
-  
-  .fifthImg {
-    height: 45px;
-    width: 35px;
-    margin-left: 7px;
-  }
-  
-  .sixthImg {
-    height: 45px;
-    width: 45px;
-    margin-left: 2px;
-  }
+  flex: 9;
+  width: 100;
+  height: 2000px;
+}
+
+.taskPage1 {
+  flex: 9;
+  width: 100;
+  height: 550px;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  height: 100px;
+  width: 80%;
+  border-bottom: 2px solid #000;
+  margin-left: 70px;
+}
+
+.taskHeader {
+  font-family: "Varela", sans-serif;
+  font-size: 45px;
+}
+
+.taskCard {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 700px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(235, 232, 232);
+}
+
+.ratCard {
+  margin-top: 40px;
+  margin-left: 75px;
+  margin-bottom: 10px;
+  width: 650px;
+  height: 375px;
+  border-radius: 5px;
+  background-color: rgb(235, 232, 232);
+}
+
+.ratCard1 {
+  margin-left: 75px;
+  margin-bottom: 10px;
+  width: 650px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgb(235, 232, 232);
+}
+
+
+.ratCard2 {
+  margin-left: 75px;
+  margin-bottom: 10px;
+  width: 650px;
+  height: 230px;
+  border-radius: 5px;
+  background-color: rgb(235, 232, 232);
+}
+
+.taskTitle {
+  margin-left: 15px;
+  font-size: 24px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.taskTitle1 {
+  margin-left: 10px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 34px;
+}
+
+.qNum {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.radioBtn {
+  height: 15px;
+  width: 15px;
+}
+
+.qText {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.qTop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question {
+  margin-left: 60px;
+  margin-bottom: 15px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question1 {
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question5 {
+  position: absolute;
+  left: 274px;
+  top: 1092px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.questionT {
+  margin-left: 20px;
+  margin-top: 9px;
+  margin-bottom: 15px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  color: rgb(10, 117, 10);
+}
+
+.questionF {
+  margin-left: 20px;
+  margin-top: 9px;
+  margin-bottom: 15px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  color: red;
+}
+
+.answerPos {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 70px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circlesImg {
+  height: 200px;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.fractionsImg {
+  height: 45px;
+  width: 70px;
+  margin-top: 3px;
+}
