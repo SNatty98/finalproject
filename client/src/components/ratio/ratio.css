@@ -95,8 +95,22 @@
   width: 15px;
 }
 
+.radioBtn1 {
+  height: 15px;
+  width: 15px;
+  margin-top: 40px;
+}
+
 .qText {
   margin-left: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.qText1 {
+  margin-left: 20px;
+  margin-top: 35px;
   margin-bottom: 12px;
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
@@ -117,6 +131,49 @@
   margin-left: 50px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question4 {
+  position: absolute;
+  top: 1025px;
+  left: 130px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question44 {
+  position: absolute;
+  top: 1045px;
+  left: 130px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question7 {
+  position: absolute;
+  top: 1715px;
+  left: 130px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question77 {
+  position: absolute;
+  top: 1735px;
+  left: 130px;
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 10px;
+}
+
+.question6 {
+  position: absolute;
+  top: 1475px;
+  left: 130px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.question66 {
+  position: absolute;
+  top: 1495px;
+  left: 130px;
   font-family: "Varela Round", sans-serif;
 }
 
