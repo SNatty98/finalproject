@@ -1,8 +1,6 @@
 import "./message.css";
 import { useState } from "react";
-import Modal from "../modal/Modal";
 import axios from "axios";
-import { useEffect } from "react/cjs/react.production.min";
 
 export default function Message({ message }) {
   const [backdrop, setBackdrop] = useState(false);

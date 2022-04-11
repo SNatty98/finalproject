@@ -18,6 +18,7 @@ import WholeNumber from "./pages/wholenumber/WholeNumber";
 import AlgebraicExpression from "./pages/algebraicexpression/AlgebraicExpression";
 import InstructionPage from "./pages/instructionpage/InstructionPage";
 import SendMessage from "./pages/sendMessage/SendMessage";
+import Algebra from "./components/algebra/Algebra";
 
 function App() {
   const { user } = useContext(Context);

@@ -11,6 +11,10 @@ export default function Topbar() {
     window.scrollTo(0, 0);
   }
 
+  function taskPage() {
+    window.scrollTo(0, 20);
+  }
+
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     window.location.replace("/login");
@@ -132,7 +136,7 @@ export default function Topbar() {
                       LEARNING CENTER
                     </Link>
                   </li>
-                  <li className="topListItem" onClick={topPage}>
+                  <li className="topListItem" onClick={taskPage}>
                     <Link className="link" to="/mytasks">
                       MY TASKS
                     </Link>

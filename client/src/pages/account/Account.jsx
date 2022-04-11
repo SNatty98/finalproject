@@ -15,7 +15,6 @@ export default function Settings() {
   const [backdrop, setBackdrop] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -122,6 +121,8 @@ export default function Settings() {
                   Profile has been updated...
                 </span>
               )}
+
+              {error && <span className="Err">Something went wrong!</span>}
             </form>
           </div>
         </div>

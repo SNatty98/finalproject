@@ -1,7 +1,7 @@
 import React from "react";
-import axios from "axios";
-import { useState, useContext } from "react";
-import { Context } from "../../context/Context";
+// import axios from "axios";
+// import { useState, useContext } from "react";
+// import { Context } from "../../context/Context";
 
 const StudentInfo = () => {
   // const [taskAlg, setTaskAlg] = useState(false);
