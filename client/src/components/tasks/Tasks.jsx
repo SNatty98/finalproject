@@ -74,7 +74,7 @@ const MyTasks = () => {
         </>
       )}
 
-      {alg & !rat & !wn && <Algebra />}
+      {alg  && !rat && !wn && <Algebra />}
 
       {!alg && rat && !wn && <Ratio />}
 

@@ -1,7 +1,7 @@
-.taskPage {
+.ratPage {
   flex: 9;
-  width: 100;
-  height: 2000px;
+  width: 100%;
+  height: 3275px;
 }
 
 .taskPage1 {
@@ -48,12 +48,22 @@
 .ratCard1 {
   margin-left: 75px;
   margin-bottom: 10px;
+  margin-top: 80px;
   width: 650px;
   height: 200px;
   border-radius: 5px;
   background-color: rgb(235, 232, 232);
 }
 
+.ratCard2 {
+  margin-left: 75px;
+  margin-bottom: 10px;
+  margin-top: 90px;
+  width: 650px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: rgb(235, 232, 232);
+}
 
 .ratCard2 {
   margin-left: 75px;
@@ -122,42 +132,47 @@
 }
 
 .question {
-  margin-left: 60px;
   margin-bottom: 15px;
   font-family: "Varela Round", sans-serif;
 }
 
 .question1 {
-  margin-left: 50px;
   margin-top: 15px;
   margin-bottom: 15px;
   font-family: "Varela Round", sans-serif;
 }
 
+.question2 {
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-bottom: 10px;
+  font-family: "Varela Round", sans-serif;
+}
+
 .question4 {
   position: absolute;
-  top: 1025px;
+  top: 1230px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
 }
 
 .question44 {
   position: absolute;
-  top: 1045px;
+  top: 1250px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
 }
 
 .question7 {
   position: absolute;
-  top: 1715px;
+  top: 2070px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
 }
 
 .question77 {
   position: absolute;
-  top: 1735px;
+  top: 2090px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
   margin-bottom: 10px;
@@ -165,14 +180,14 @@
 
 .question6 {
   position: absolute;
-  top: 1475px;
+  top: 1790px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
 }
 
 .question66 {
   position: absolute;
-  top: 1495px;
+  top: 1810px;
   left: 130px;
   font-family: "Varela Round", sans-serif;
 }
@@ -223,4 +238,131 @@
   height: 45px;
   width: 70px;
   margin-top: 3px;
+}
+
+.correctAns {
+  width: 650px;
+  height: 60px;
+  background-color: rgb(22, 134, 22);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.correctAns1 {
+  width: 650px;
+  height: 70px;
+  background-color: rgb(22, 134, 22);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.correctAns2 {
+  margin-top: 70px;
+  width: 650px;
+  height: 70px;
+  background-color: rgb(22, 134, 22);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.falseAns {
+  width: 650px;
+  height: 60px;
+  background-color: rgb(216, 9, 9);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.falseAns2 {
+  margin-top: 70px;
+  width: 650px;
+  height: 70px;
+  background-color: rgb(216, 9, 9);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.ansPos {
+  margin-top: 35px;
+}
+
+.ansPos1 {
+  margin-top: 15px;
+}
+
+.ansPos2 {
+  margin-top: 47px;
+}
+
+.correctPos {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+
+.tipBtn {
+  margin-top: 15px;
+  margin-left: 10px;
+  border: 1px black solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  background-color: rgb(235, 232, 232);
+}
+
+.tipBtn1 {
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 1px black solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  background-color: rgb(235, 232, 232);
+}
+
+.hintPos {
+  width: 650px;
+  height: 60px;
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.hintPos1 {
+  margin-top: 70px;
+  width: 650px;
+  height: 60px;
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.hint {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+
+.fractionsImg1 {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
 }
