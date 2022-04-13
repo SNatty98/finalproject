@@ -38,7 +38,7 @@ const Register = () => {
       <form className="registerContainer" onSubmit={handleSubmit}>
         <h1 className="registerHeader">Register</h1>
         <input
-          type="text"
+          type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           required={true}

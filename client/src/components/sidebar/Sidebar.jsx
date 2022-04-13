@@ -107,15 +107,6 @@ const Sidebar = () => {
             Statistical Problems
           </Link>
         </p>
-
-      </div>
-      <div className="sidebarItem">
-        <span className="sidebarTitle1">FOLLOW US</span>
-        <div className="sidebarSocial">
-          <i className="sidebarIcon fa-brands fa-facebook-square"></i>
-          <i className="sidebarIcon1 fa-brands fa-twitter-square"></i>
-          <i className="sidebarIcon1 fa-brands fa-instagram-square"></i>
-        </div>
       </div>
     </div>
   );
