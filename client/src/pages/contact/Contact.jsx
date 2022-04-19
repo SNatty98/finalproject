@@ -1,7 +1,6 @@
 import "./contact.css";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import axios from "axios";
-import { Context } from "../../context/Context";
 
 const Contact = () => {
   const [title, setTitle] = useState("");
@@ -9,8 +8,6 @@ const Contact = () => {
   const [query, setQuery] = useState("");
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(null);
-
-  const { user } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +19,6 @@ const Contact = () => {
     };
     try {
       await axios.post("http://localhost:5000/api/contacts", newContact);
-      window.location.reload();
       setSuccess(true);
     } catch (err) {
       setError(true);
@@ -40,19 +36,21 @@ const Contact = () => {
         )}
       </div>
       <form className="cSecondSection" onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email Address"
-          className="emailInput"
-          minLength={6}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Query Title"
-          className="titleInput"
-          onChange={(e) => setTitle(e.target.value)}
-        />
+        <div className="wrapped">
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="emailInput"
+            minLength={6}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Query Title"
+            className="emailInput"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
         <input
           type="text"
           placeholder="Your Query!"
@@ -65,6 +63,9 @@ const Contact = () => {
             Send Query
           </button>
         </div>
+        {error && (
+          <p className="contactErr">Something went Wrong! Please try again.</p>
+        )}
       </form>
     </div>
   );

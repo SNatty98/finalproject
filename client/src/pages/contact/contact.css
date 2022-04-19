@@ -22,6 +22,7 @@
 .cSecondSection {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: rgb(235, 232, 232);
   border-bottom: 1px black solid;
 }
@@ -37,15 +38,17 @@
 
 .emailInput {
   margin-top: 50px;
-  width: 450px;
-  height: 80px;
+  width: 250px;
+  height: 60px;
   border-radius: 15px;
   margin-left: 50px;
   outline: none;
   font-family: "Varela Round", sans-serif;
+  font-size: 16px;
 }
 
 .queryInput {
+  padding-bottom: 140px;
   outline: none;
   border-radius: 15px;
   margin-left: 50px;
@@ -55,8 +58,8 @@
 }
 
 .cBtn {
-  width: 80px;
-  margin-left: 250px;
+  width: 110px;
+  margin-left: 45px;
   margin-bottom: 40px;
   border: none;
   outline: none;
@@ -68,17 +71,15 @@
   cursor: pointer;
 }
 
-.btnPos {
+.wrapped {
   display: flex;
-  float: right;
+  flex-wrap: wrap;
 }
 
-.adminText {
-  align-content: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 600px;
-  border-radius: 10px;
-  padding: 10px;
-  font-family: "Varela", sans-serif;
+.contactErr {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  color: black;
 }

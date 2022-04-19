@@ -29,21 +29,6 @@ const UserSchema = new mongoose.Schema(
       default: false,
       required: false,
     },
-
-    taskAlg: {
-      type: Boolean,
-      default: false,
-    },
-
-    taskTrig: {
-      type: Boolean,
-      default: false,
-    },
-
-    taskWN: {
-      type: Boolean,
-      default: false,
-    },
   },
   { timestamps: true }
 );

@@ -22,20 +22,14 @@ export default function Topbar() {
 
   return (
     <div className="top">
-      {user ? (
+      {user && !user.admin && (
         <>
-          {!user.admin ? (
-            <div className="topLeft" onClick={topPage}>
-              <Link className="link" to="/">
-                <img className="logoImg" src={LogoFreedom} alt="" />
-              </Link>
-            </div>
-          ) : (
-            ""
-          )}
+          <div className="topLeft" onClick={topPage}>
+            <Link className="link" to="/">
+              <img className="logoImg" src={LogoFreedom} alt="" />
+            </Link>
+          </div>
         </>
-      ) : (
-        ""
       )}
 
       {!user ? (
@@ -48,25 +42,19 @@ export default function Topbar() {
         ""
       )}
 
-      {user ? (
+      {user && user.admin && (
         <>
-          {user.admin ? (
-            <div className="topLeft" onClick={topPage}>
-              <Link className="link" to="/adminhome">
-                <img className="logoImg" src={LogoFreedom} alt="" />
-              </Link>
-            </div>
-          ) : (
-            ""
-          )}
+          <div className="topLeft" onClick={topPage}>
+            <Link className="link" to="/adminhome">
+              <img className="logoImg" src={LogoFreedom} alt="" />
+            </Link>
+          </div>
         </>
-      ) : (
-        ""
       )}
 
       <div className="topCenter">
         <ul className="topList">
-          {!user ? (
+          {!user && (
             <>
               <li className="topListItem" onClick={topPage}>
                 <Link className="link" to="/">
@@ -84,76 +72,61 @@ export default function Topbar() {
                 </Link>
               </li>
             </>
-          ) : (
-            ""
           )}
 
-          {user ? (
+          {user && user.admin && (
             <>
-              {user.admin ? (
-                <>
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/adminhome">
-                      HOME
-                    </Link>
-                  </li>
+              <>
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/adminhome">
+                    HOME
+                  </Link>
+                </li>
 
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/settasks">
-                      SET TASKS
-                    </Link>
-                  </li>
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/results">
-                      STUDENTS
-                    </Link>
-                  </li>
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/sendmessage">
-                      SEND MESSAGE
-                    </Link>
-                  </li>
-                </>
-              ) : (
-                ""
-              )}
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/settasks">
+                    SET TASKS
+                  </Link>
+                </li>
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/results">
+                    STUDENTS
+                  </Link>
+                </li>
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/sendmessage">
+                    SEND MESSAGE
+                  </Link>
+                </li>
+              </>
             </>
-          ) : (
-            ""
           )}
 
-          {user ? (
+          {user && !user.admin && (
             <>
-              {!user.admin ? (
-                <>
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/about">
-                      ABOUT
-                    </Link>
-                  </li>
-                  <li className="topListItem" onClick={topPage}>
-                    <Link className="link" to="/learningcenter">
-                      LEARNING CENTER
-                    </Link>
-                  </li>
-                  <li className="topListItem" onClick={taskPage}>
-                    <Link className="link" to="/mytasks">
-                      MY TASKS
-                    </Link>
-                  </li>
-                  <li className="topListItem">
-                    <Link className="link" to="/messageboard">
-                      MESSAGE BOARD
-                    </Link>
-                  </li>
-                </>
-              ) : (
-                ""
-              )}
-            </>
-          ) : (
-            ""
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/about">
+                    ABOUT
+                  </Link>
+                </li>
+                <li className="topListItem" onClick={topPage}>
+                  <Link className="link" to="/learningcenter">
+                    LEARNING CENTRE
+                  </Link>
+                </li>
+                <li className="topListItem" onClick={taskPage}>
+                  <Link className="link" to="/mytasks">
+                    MY TASKS
+                  </Link>
+                </li>
+                <li className="topListItem">
+                  <Link className="link" to="/messageboard">
+                    MESSAGE BOARD
+                  </Link>
+                </li>
+              </>
           )}
+          
         </ul>
       </div>
 

@@ -38,24 +38,5 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// REGISTER ADMIN
-// router.post("/registeradmin", async (req, res) => {
-//   const salt = await bcrypt.genSalt(10);
-//   const hashedPass = await bcrypt.hash(req.body.password, salt);
-
-//   try {
-//     const newAdmin = new AdminUser({
-//       username: req.body.username,
-//       email: req.body.email,
-//       password: hashedPass,
-//     });
-
-//     const admin = await newAdmin.save();
-//     res.status(200).json(admin);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
 module.exports = router;
 
