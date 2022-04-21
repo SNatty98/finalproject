@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   const userRef = useRef();
   const passwordRef = useRef();
-  const { user, dispatch, isFetching } = useContext(Context);
+  const { user, dispatch } = useContext(Context);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,9 +32,14 @@ export default function Login() {
   return (
     <div className="loginContainer1">
       <form className="loginContainer" onSubmit={handleSubmit}>
-        <h1 className="loginHeader" >Login</h1>
+        <h1 className="loginHeader">Login</h1>
         <input type="text" placeholder="Username" ref={userRef} />
-        <input type="password" minLength={6} placeholder="Password" ref={passwordRef} />
+        <input
+          type="password"
+          minLength={6}
+          placeholder="Password"
+          ref={passwordRef}
+        />
         <Button className="loginBtn" text="Login" type="submit" />
       </form>
     </div>

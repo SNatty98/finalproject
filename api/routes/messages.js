@@ -29,6 +29,23 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
+//GET ALL MESSAGES
+router.get("/", async (req, res) => {
+  const username = req.query.user;
+  try {
+    let messages;
+    if (username) {
+      messages = await Message.find({ username });
+    } 
+     else {
+      messages = await Message.find();
+    }
+    res.status(200).json(messages);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 //GET MESSAGE
 router.get("/:id", async (req, res) => {
   try {
@@ -39,21 +56,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-//GET ALL MESSAGES
-router.get("/", async (req, res) => {
-    const username = req.query.user;
-    try {
-      let messages;
-      if (username) {
-        messages = await Message.find({ username });
-      } 
-       else {
-        messages = await Message.find();
-      }
-      res.status(200).json(messages);
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+
 
 module.exports = router;

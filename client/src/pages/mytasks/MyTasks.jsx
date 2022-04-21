@@ -6,10 +6,10 @@ import Sidebar from "../../components/sidebar/Sidebar";
 // {task1 && showttask1}
 // {task2 && showttask2}
 // {task3 && showttask3}
+//background-color: rgb(22, 134, 22);
 
 const MyTasks = () => {
   
-//background-color: rgb(22, 134, 22);
   return (
     <div className="divider">
       <Tasks /> 
