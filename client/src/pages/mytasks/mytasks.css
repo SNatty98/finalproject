@@ -1,3 +1,4 @@
 .divider {
-    display: flex;
+  display: flex;
+  border-top: 1px solid #000;
 }

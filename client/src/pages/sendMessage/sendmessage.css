@@ -1,19 +1,19 @@
-.write {
+.sendMessage {
   padding-top: 50px;
   border-top: 1px solid #000;
 }
 
-.writeForm {
+.SMForm {
   position: relative;
 }
 
-.writeFormGroup {
+.SMFormGroup {
   margin-left: 150px;
   display: flex;
   align-items: center;
 }
 
-.writeIcon {
+.SMIcon {
   font-size: 45px;
   width: 25px;
   height: 25px;
@@ -26,7 +26,7 @@
   margin-right: 10px;
 }
 
-.writeInput {
+.SMInput {
   font-size: 30px;
   border: none;
   padding: 20px;
@@ -34,7 +34,7 @@
   margin-top: 30px;
 }
 
-.writeInput1 {
+.SMInput1 {
   font-size: 30px;
   border: none;
   padding: 20px;
@@ -51,17 +51,17 @@
   margin-left: 30px;
 }
 
-.writeText {
+.SMText {
   font-size: 20px;
   height: 200px;
 }
 
-.writeSubmit {
+.SMBtn {
   position: absolute;
   top: 30px;
   right: 50px;
   color: white;
-  background-color: teal;
+  background-color: rgb(0, 15, 15);
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -81,7 +81,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.writeImg {
+.SMImg {
   margin-left: 150px;
   width: 925px;
   height: 225px;

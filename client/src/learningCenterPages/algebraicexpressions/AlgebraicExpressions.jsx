@@ -269,7 +269,7 @@ function AlgebraicExpressions() {
 
             <h2 className="AElearningHeader">Question 2</h2>
             <p className="AEinfo1">Simplify:</p>
-            <p className="AEinfo2">2x + x + 4c - 3c + 6d</p>
+            <p className="AEinfo2">2a + 4a + 7c + 4b - 2c + d</p>
             {!click2 && (
               <button className="AEbtn" onClick={handleClick2}>
                 Show Answer
@@ -286,10 +286,11 @@ function AlgebraicExpressions() {
                   In this expression we have 3 variables, so let's start by
                   organising them.
                 </p>
-                <p className="AEanswer2">2x + x = 3x</p>
-                <p className="AEanswer2">4c - 3c = c</p>
-                <p className="AEanswer2">+ 6d</p>
-                <p className="AEanswer2">Final answer: 3x + c + 6d</p>
+                <p className="AEanswer2">2a + 4a = 6a</p>
+                <p className="AEanswer2">7c - 2c = 5c</p>
+                <p className="AEanswer2">+ d</p>
+                <p className="AEanswer2">+ 4b</p>
+                <p className="AEanswer2">Final answer: 6a + 5c + d + 4b</p>
               </>
             )}
             <div className="arrowForm">
@@ -318,7 +319,7 @@ function AlgebraicExpressions() {
             </p>
           </div>
           <div className="AElearning2">
-            <h2 className="AElearningHeader">Multiplication Expressions</h2>
+            <h2 className="AElearningHeader">Expression Multiplications</h2>
             <p className="AEinfo1">
               Algebraic expressions can be added and subtracted, however they
               can also be multiplied, so let's take a look at that!

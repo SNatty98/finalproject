@@ -10,61 +10,53 @@ const About = () => {
       <div className="secondSection">
         <p className="smHeader">Why we started...</p>
         <p className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magni
-          consequatur quae blanditiis officiis dolorem rem. Ipsam, praesentium.
-          Doloribus repudiandae voluptatibus quam laborum ipsum odit, nemo
-          tempora excepturi necessitatibus obcaecati. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Pariatur labore laborum inventore,
-          soluta at veritatis architecto veniam optio quaerat consequatur!
-          Repellendus amet quidem cumque voluptatum laboriosam! Magnam
-          repellendus provident totam? Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Eos saepe vitae tempora temporibus quaerat sint non!
-          Fugiat, veritatis ab? Veritatis nulla illum incidunt at facilis
-          aspernatur alias eligendi consequuntur natus. Lorem ipsum dolor, sit
-          amet consectetur adipisicing elit. Quae, quam. Quam hic, minima
-          voluptate cumque aliquam tempora reprehenderit consequuntur! Quos
-          pariatur vel voluptate non similique? Porro, quia? Dolores, assumenda
-          aspernatur.
+          This project was started to help students grow in their mathematics
+          ability, focusing on those who failed to achieve their mathematics GCSE.
+        </p>
+        <p className="text">
+          Over 30% of students, more than 1 million students per year,
+          fail their mathematics GCSE, and this puts them at a disadvantage when
+          joining college, and when they look to join a university.
+        </p>
+        <p className="text">
+          The ambition of this project is to help those who have not passed
+          their mathematics GCSE at secondary school to succeed in resitting
+          their mathematics exam, by providing content that is accessible, tailored to individual needs, and is curated for college level students.
         </p>
       </div>
       <div className="thirdSection">
         <p className="smHeader">Where we are...</p>
         <p className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-          molestias facilis facere officia voluptatum quis temporibus
-          repudiandae nesciunt! Sit amet minus labore inventore, id totam
-          sapiente quidem sequi adipisci excepturi? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Impedit consectetur laudantium possimus
-          quaerat sit ea fugit eius blanditiis autem quisquam consequuntur
-          inventore tempora sequi minima officia assumenda, numquam quo et.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur,
-          accusantium id non doloribus facilis itaque. Id provident voluptates,
-          beatae deleniti delectus necessitatibus maiores asperiores optio
-          accusamus qui fugiat ipsa repellat. Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Odit, consequuntur quasi quia veritatis
-          illo possimus quaerat corrupti aliquam nisi consequatur officia
-          corporis quod dignissimos, eaque culpa, omnis placeat ut veniam.
+          The current content available on the website is only the beginning of the support this website aims to provide.
+          So far, there are several ways for students to interact with the different areas of mathematics, and the opportunity 
+          for teachers to target certain skills and work individually with students.
+        </p>
+        <p className="text">
+          Check out the Learning Centre, where you can learn new topics by reading
+          through the pages currently available to you, or can brush up on old
+          skills you may have forgotten since you were at secondary school!
+        </p>
+        <p className="text">
+          Additionally, there are quizzes where you can test your knowledge on the 'My Tasks'
+          page after utilising the learning centre to learn a new topic!
         </p>
       </div>
       <div className="fourthSection">
         <p className="smHeader">Plans for the future...</p>
         <p className="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias fugit
-          soluta, voluptatem voluptas ab iste, quam veritatis maiores
-          exercitationem assumenda corporis animi! Dicta, asperiores! Sapiente
-          animi maiores cupiditate laboriosam quia? Lorem ipsum dolor, sit amet
-          consectetur adipisicing elit. Laudantium excepturi voluptate vero,
-          quaerat sint molestias assumenda dolorem hic dignissimos qui ducimus
-          eos porro rem reprehenderit enim eligendi repellendus mollitia itaque.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ullam
-          atque asperiores maiores officia blanditiis in sed. Ipsam earum
-          nostrum aliquam, laborum cum debitis quia praesentium, culpa fugit
-          aperiam omnis. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Necessitatibus fugiat, excepturi fuga reprehenderit iste nisi
-          dolorum! Recusandae temporibus numquam, vitae doloremque nisi quasi
-          rerum quia perferendis perspiciatis. Cumque, vero harum. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptatibus, eius
-          expedita doloribus autem modi odio placeat.
+          We are looking to expand this web application with many more features
+          to enable the education of college students.
+        </p>
+        <p className="text">
+          Some of these features include a live chat function for students to
+          communicate with each other, and learn mathematical theories through
+          communicating with one another!
+        </p>
+        <p className="text">
+          Another feature that will be added is the ability to see the results
+          of your completed quizzes. This will allow you to see your own
+          progress and how you develop over time, which will boost your
+          confidence each time you progress!
         </p>
       </div>
     </div>

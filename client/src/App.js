@@ -33,7 +33,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route
           path="/learningcenter"
-          element={user ? <LearningCenter /> : <Register />}
+          element={user && !user.admin ? <LearningCenter /> : <Register />}
         />
         <Route path="/account" element={user ? <Account /> : <Register />} />
         <Route
@@ -55,15 +55,15 @@ function App() {
         <Route path="/mytasks" element={user ? <MyTasks /> : <Home />} />
         <Route
           path="/wholenumber"
-          element={user ? <WholeNumber /> : <Home />}
+          element={user && !user.admin ?<WholeNumber /> : <Home />}
         />
         <Route
           path="/expressions"
-          element={user ? <AlgebraicExpression /> : <Home />}
+          element={user && !user.admin ?<AlgebraicExpression /> : <Home />}
         />
         <Route
           path="/messageboard"
-          element={user ? <InstructionPage /> : <Home />}
+          element={user && !user.admin ?<InstructionPage /> : <Home />}
         />
       </Routes>
       <Footer />

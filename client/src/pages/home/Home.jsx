@@ -4,27 +4,19 @@ import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
-
   return (
     <div className="home">
       <div className="info">
         <div className="separator">
           <h1 className="header">Welcome to FreedomMaths! </h1>
           <p className="mainText">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-            officiis vero rem sunt velit tenetur, harum repellat aperiam, nulla
-            quasi nesciunt quibusdam beatae sint molestias, incidunt eveniet
-            iste totam explicabo! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Fugit numquam possimus rem, recusandae delectus
-            sint modi commodi porro neque eum, ullam tempora molestiae
-            consequuntur ducimus pariatur provident inventore dignissimos
-            doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Hic, esse? Excepturi aperiam nisi ea cupiditate sed fugiat, ipsum
-            numquam odio nam saepe magnam facilis quam odit, at laudantium non
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-            excepturi suscipit, sapiente voluptate voluptas nemo amet magnam
-            inventore, debitis fuga modi corrupti consequuntur, voluptatem ea
-            maiores nostrum eveniet tempora ad. 
+            Here at Freedom Maths we are all about helping your development as a
+            mathmetician!
+          </p>
+          <p className="mainText1">
+            We are always looking for ways to improve our application, if there
+            is any comments or suggestions you would like to make, you can use
+            the contact us page located in the top bar!
           </p>
           <div className="thisBtn">
             <Link className="link" to="/about">

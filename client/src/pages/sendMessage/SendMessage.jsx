@@ -30,16 +30,18 @@ export default function SendMessage() {
   };
 
   return (
-    <div className="write">
-      <img className="writeImg" alt="" src={headerImg} />
-      <form className="writeForm" onSubmit={handleSubmit}>
-        <div className="writeFormGroup">
+    <div className="sendMessage">
+      <img className="SMImg" alt="" src={headerImg} />
+      <form className="SMForm" onSubmit={handleSubmit}>
+        <div className="SMFormGroup">
           <input
             type="text"
             placeholder="Task Title"
-            className="writeInput1"
+            className="SMInput1"
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
+            required={true}
+            minLength={4}
           />
           <input
             type="text"
@@ -47,17 +49,21 @@ export default function SendMessage() {
             className="setFor"
             autoFocus={true}
             onChange={(e) => setDate(e.target.value)}
+            required={true}
+            minLength={4}
           />
         </div>
-        <div className="writeFormGroup">
+        <div className="SMFormGroup">
           <textarea
             placeholder="Write your task description here!"
             type="text"
-            className="writeInput writeText"
+            className="SMInput SMText"
             onChange={(e) => setInfo(e.target.value)}
+            required={true}
+            minLength={15}
           ></textarea>
         </div>
-        <button className="writeSubmit" type="submit">
+        <button className="SMBtn" type="submit">
           Publish Task
         </button>
         {error && (

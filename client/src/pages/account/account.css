@@ -5,6 +5,8 @@
 .settingsWrapper {
   flex: 9;
   padding: 20px;
+  border-top: 1px solid #000;
+
 }
 
 .settingsTitle {

@@ -25,16 +25,6 @@ export default function Message({ message }) {
     }
   };
 
-  // function deleteClick(message) {
-  //   fetch(`http://localhost:5000/api/messages/${message._id}`, {
-  //     method: "DELETE",
-  //   }).then((result) => {
-  //     result.json().then((resp) => {
-  //       console.warn(resp);
-  //     });
-  //   });
-  // }
-
   return (
     <>
       {!backdrop && (

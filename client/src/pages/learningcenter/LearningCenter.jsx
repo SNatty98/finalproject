@@ -4,6 +4,11 @@ import classes from "./learningcenter.module.css";
 import "./arrowStyling.css";
 
 const LearningCenter = () => {
+
+  function topPage() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div>
       <div className={classes.learnContainer}>
@@ -13,7 +18,7 @@ const LearningCenter = () => {
           <i className="arrowIcon fa-solid fa-circle-arrow-right"></i>
           <ul className={classes.listed}>
             <div className={classes.listArea}>
-              <Link className="link" to="/wholenumber">
+              <Link className="link" to="/wholenumber" onClick={topPage}>
                 <p className={classes.numText}>Whole Numbers</p>
               </Link>
               <p className={classes.numText}>Decimals</p>
@@ -30,7 +35,7 @@ const LearningCenter = () => {
           <i className="arrowIcon fa-solid fa-circle-arrow-right"></i>
           <ul className={classes.listed}>
             <div className={classes.listArea}>
-              <Link className="link" to="/expressions">
+              <Link className="link" to="/expressions" onClick={topPage}>
               <p className={classes.algText}>Algebraic Expressions</p>
               </Link>
               <p className={classes.algText}>Algebraic Formulae</p>
